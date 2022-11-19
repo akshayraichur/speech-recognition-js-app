@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #f0abfc;
+  --seconndary-color: #395b64;
+  --text-color: #c026d3;
+  --bg-color: #fdf4ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+main,
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.play-again {
+  padding: 8px 15px;
+  border: 0;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.msg {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 2px solid var(--primary-color);
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.wave-hi {
+  font-size: 2rem;
+  animation: wave 2.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
